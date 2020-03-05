@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Max Temperature</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a style="background-color: #e76209; padding: 10px; color: white;" class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="temp.html">Temperature</a>
+                      <a class="dropdown-item" href="humid.html">Humidity</a>
+                      <a class="dropdown-item" href="cloudy.html">Cloudiness</a>
+                      <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    </div>
+                  </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="comparisons.html">Comparisons <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                  </li>         
+              </ul>
+            </div>
+        </nav>
+
+        <div id='mainpage'>
+
+
+          <div id='mainsection' class='container'>
+            <div>
+              <h1>Max Temperature</h1>
+            </div>
+            <img src='Resources/latVStemp.png' width=100% alt='Plot of Latitude vs Max Temperature' title='Latitude vs Max Temperature'>
+      
+            <div class='row' id='latsec'>
+              
+              <p>Based on the data retrieved in this project, there does appear to be a correlation between latitude and max temperature.  The observable trend in this data set shows that the max temperature tends to increase as the cities became closer to the equator.  In the northern hemisphere, the r-squared value was -0.87, indicating a strong relationship.  The southern hemisphere did not have as strong a correlation, but with an r-squared value of 0.44, we can conclude that latitude has some predictive quality when it comes to max temperature here as well.</p>
+            </div>
+          </div>
+      
+          
+              <div class='container widescreen'>
+                <aside id='visualizations'>
+                <div class='col'>
+                    <div class='row'>
+                      <h2>Visualizations</h2>
+                    </div>
+                    <div class='row'>
+                      <div class='col border border-secondary'>
+                      <a href='temp.html'><img src='Resources/latVStemp.png' width=100% alt='Plot of Latitude vs Max Temperature' title='Latitude vs Max Temperature'></a>
+                      </div>
+                      <div class='col'>
+                      <a href='humid.html'><img src='Resources/latVShum.png' width=100% alt='Plot of Latitude vs Humidity' title='Latitude vs Humidity'></a>
+                      </div>
+                    </div><br>
+                    <div class='row'>
+                      <div class='col'>
+                        <a href='cloudy.html'><img src='Resources/latVSclouds.png' width=100% alt='Plot of Latitude vs Cloudiness' title='Latitude vs Cloudiness'></a>
+                      </div>
+                      <div class='col'>
+                        <a href='wind.html'><img src='Resources/latVSwind.png' width=100% alt='Plot of Latitude vs Wind Speed' title='Latitude vs Wind Speed'></a>
+                      </div>
+                    </div>            
+                </div>
+                </aside>
+              </div>
+              
+              <div class='container smallscreen'>
+                <aside id='visualizations'>
+                <div class='col'>
+                    <div class='row'>
+                      <h2>Visualizations</h2>
+                    </div>
+                    <div class='row'>
+                      <div class='col border border-secondary'>
+                      <a href='temp.html'><img src='Resources/latVStemp.png' alt='Plot of Latitude vs Max Temperature' title='Latitude vs Max Temperature'></a>
+                      </div>
+                      <div class='col'>
+                      <a href='humid.html'><img src='Resources/latVShum.png' alt='Plot of Latitude vs Humidity' title='Latitude vs Humidity'></a>
+                      </div>
+                    </div><br>
+                    <div class='row'>
+                      <div class='col'>
+                        <a href='cloudy.html'><img src='Resources/latVSclouds.png' alt='Plot of Latitude vs Cloudiness' title='Latitude vs Cloudiness'></a>
+                      </div>
+                      <div class='col'>
+                        <a href='wind.html'><img src='Resources/latVSwind.png' alt='Plot of Latitude vs Wind Speed' title='Latitude vs Wind Speed'></a>
+                      </div>
+                    </div>            
+                </div>
+                </aside>
+              </div>
+      
+            </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

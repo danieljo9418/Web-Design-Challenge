@@ -1,0 +1,41 @@
+aside{display: block; float: left; flex: 1; margin: 30px; background-color: white; margin-left: 0px; padding: 15px; padding-bottom: 30px;}
+
+#latfig{float: left; width: 350px; padding-top: 23px;}
+
+#latsec{display: inline;}
+
+#mainpage{display: flex;}
+
+#mainsection{flex: 0 0 55%; background-color: white; margin: 30px; margin-right: 15px; padding-top: 15px;}
+
+#compsec{background-color: white; margin: 30px; margin: 50px; padding: 15px;}
+
+body{background-color: rgb(235, 233, 233)}
+
+h1{color: rgba(106, 211, 202, 0.438);}
+
+h2{color: rgba(106, 211, 202, 0.438); padding-bottom: 15px;}
+
+h4{color: rgba(106, 211, 202, 0.438);}
+
+
+
+
+.smallscreen{display: none;}
+
+@media (max-width: 600px) {
+
+    #latfig{float: left; width: 250px; padding-top: 23px;}
+
+    aside{margin: 30px; background-color: white; padding: 15px; padding-bottom: 30px; width: 450px;}
+
+    #mainsection{background-color: white; width: 450px; margin: 40px; padding: 20px; padding-top: 15px; font-size: 13px;}
+
+    #mainpage{display: inline;}
+
+    .widescreen{display: none;}
+    .smallscreen{display: block;}
+
+    .smallscreen img{width: 400px;}
+
+}
